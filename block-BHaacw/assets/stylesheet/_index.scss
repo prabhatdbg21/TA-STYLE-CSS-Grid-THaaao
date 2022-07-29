@@ -1,0 +1,117 @@
+body{
+    background-color: #3a4a50;
+}
+
+/* Header*/
+h1{
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+}
+.nav{
+    border-top: 5px solid #0095be;
+    background-color: white;
+    padding: 0.4rem 0;
+    border-radius: 5px;
+    a{
+        color: #0096be;
+    }
+}
+
+/* Main */
+.titles{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+.title{
+    border-top: 5px solid #0095be;
+    background-color: white;
+    border-radius: 5px;
+    h2{
+        font-size: 1.5rem;
+        color: #43535e;
+        padding-bottom: 0.3rem;
+        padding: 0.4rem 0.6rem;
+    }
+    p{
+        color: #43535e;
+        font-size: 0.9rem;
+        padding: 0.2rem 0.6rem;
+    }
+    button{
+        width: 100%;
+        border: 0;
+        background-color: white;
+        padding: 0.6rem;
+        text-align: start;
+        a{
+            color: #fb4d3f;
+        }
+    }
+}
+.title2{
+    display: grid;
+    grid-row: span 3;
+    figure{
+        padding: 0 2rem;
+        img{
+            border-radius: 50%;
+        }
+    }
+}
+.title3{
+    button{
+        background-color: #fc2f1b;
+        a{
+            color: white;
+        }
+    }
+}
+.title4{
+    display: grid;
+    grid-row: span 2;
+    figure{
+        text-align: center;
+        padding: 1rem ;
+        img{
+            width: 50%;
+        }
+    }
+}
+.title5{
+    h2{
+        background-color: #0095be;
+        color: white;
+    }
+}
+
+
+@media  screen and (max-width: 949px){
+    .titles{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .title2{
+        order: 2;
+    } 
+}
+
+@media  screen and (max-width: 530px){
+    .titles{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .title2{
+        order: 0;
+    }
+    .title1{
+        order: -2;
+    }
+    .title4{
+        order: -1;
+    } 
+}
+
+
+
