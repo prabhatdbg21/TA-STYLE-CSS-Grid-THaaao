@@ -1,0 +1,201 @@
+.items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.item{
+    display: grid;
+}
+.item1{
+    grid-column: span 2;  
+}
+.item2{
+    grid-column: span 2;
+    background-color: #f5e3d6;
+    .nav{
+        padding: 2rem 6rem;
+        a{
+            color: #7b7978;
+            font-size: 0.9rem;
+        }
+    }
+    .website{
+        padding: 4rem 2rem 7rem 2rem;
+        color: $text-light;
+        font-weight: 200;
+        h4{
+            font-size: 0.9rem;
+        }
+        h2{
+            font-size: 2rem;
+            font-weight: 300;
+            padding: 1rem 0;
+            line-height: 1.2;
+            strong{
+                font-weight: 700;
+            }
+        }
+        .btn{
+            margin-top: 2.5rem;
+        }
+
+    }
+}
+.item3{
+    grid-column: span 2;
+    padding: 1.5rem;
+    h3{
+        font-size: 2rem;
+        color: $text-dark;
+    } 
+    span{
+        color: $bg;
+        padding: 0.8rem 0 1.2rem 0;
+    }  
+    p{
+        margin-bottom: 1rem;
+        font-weight: 200;
+        font-size: 0.9rem;
+    }
+}
+.item5{
+    background-color: $bg;
+    padding: 2rem 2.5rem;
+    color: white;
+    font-size: 0.85rem;
+    h3{
+        font-size: 2rem;
+    }
+    h4{
+        padding: 0.5rem 0 1.5rem 0;
+    }
+    label{
+        color: $text-dark;
+    }
+    progress{
+        width: 100%;
+        height: 3px;
+        margin: 0.5rem 0 1rem 0;
+        appearance: none;
+    }
+    progress::-webkit-progress-bar{
+        background-color: white;
+    }
+    progress::-webkit-progress-value{
+        background-color: $text-dark;
+    }
+}
+/*item6*/
+article{
+    text-align: center;
+    background-color: #ecae4e;
+    color: white;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    i{
+        font-size: 2rem;
+        padding: 1rem 0 2rem 0;
+        font-weight: 200;
+    }
+    h3{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        font-weight: 100;
+    }
+}
+.item7{
+    article{
+        background-color: $bg-secondary;
+    }
+}
+.item8{
+    article{
+        background-color: #161616;
+    }
+}
+.item9{
+    article{
+        background-color: white;
+        color: $text-light;
+        h3{
+            color: $text-dark;
+        }
+    }
+}
+.item10{
+    grid-column: span 2;
+}
+.item11{
+    grid-column: span 2;
+    background-color: $bg-secondary;
+    padding: 4rem 2.5rem 3rem 3.5rem;
+}
+.item11-box{
+    padding-bottom: 1rem;
+    i{
+        margin-right: 2rem;
+        font-size: 2rem;
+        padding-top: 0.5rem;
+    }
+    h5{
+        font-size: 1.4rem;
+        padding-bottom: 0.5rem;
+    }
+    strong{
+        color: $text-dark;
+        font-size: 0.9rem;
+    }
+}
+.item12{
+    background-color: #ecae4e;
+}
+.item13{
+    grid-column: span 2;
+}
+.item14{
+    grid-column: span 2;
+    background-color: $bg-secondary;
+    h4{
+        padding-bottom: 4rem;
+    }
+    input, textarea{
+        border: 0;
+        border-bottom: 2px solid  #ecae4e;
+        background-color: $bg-secondary;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+    ::placeholder{
+        color: white;
+    }
+}
+.item16{
+    padding-top: 3.5rem;
+    background-color: #161616;
+    display: block;
+    address{
+        padding: 1rem 0 2rem 0;
+    }
+    li{
+        padding-top: 1.5rem;
+        i{
+            color: white;
+            margin-right: 0.8rem;
+        }
+    }
+}
+.item17{
+    grid-column: span 4;
+    background-color: $bg-secondary;
+    padding: 2rem 15%;
+}
+footer{
+    padding: 7rem 0 9rem 0;
+    text-align: center;
+    ul{
+        padding-top: 4rem;
+        justify-content: center !important;
+        li{
+            margin: 0 1.5rem;
+        }
+    }
+}
